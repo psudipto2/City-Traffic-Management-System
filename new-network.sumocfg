@@ -1,0 +1,5 @@
+<configuration>
+    <input>
+        <net-file value="new-network.net.xml"/>
+    </input>
+</configuration>
