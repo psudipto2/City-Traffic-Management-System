@@ -1,108 +1,243 @@
 <routes>
 
-    <vType id="type1"
-           vClass="bicycle" length="1.6" width="6.5" height="1.7" accel="1.2" decel="3" emergencyDecel="7" sigma="1.0" maxSpeed="20"
+    <vType id="two_wheeled_vehicle_0"
+           vClass="bicycle" length="1.6" width="0.65" height="1.7" accel="1.2" decel="3" emergencyDecel="7" sigma="1.0" maxSpeed="20"
            guiShape="bicycle" speedFactor="2.0" speedDeviation="0.1" minGap="0.5"/>
 
 
-    <vType id="type2"
+    <vType id="two_wheeled_vehicle_1"
            vClass="moped" length="2.1" width="0.8" height="1.7" accel="1.1" decel="7" emergencyDecel="10" sigma="1.0" maxSpeed="45"
            guiShape="moped" speedFactor="2.0" speedDeviation="0.1" minGap="2.5"/>
 
 
-    <vType id="type3"
+    <vType id="two_wheeled_vehicle_2"
            vClass="motorcycle" length="2.2" width="0.9" height="1.5" accel="6" decel="10" emergencyDecel="10" sigma="1.0" maxSpeed="200"
            guiShape="motorcycle" speedFactor="2.0" speedDeviation="0.1" minGap="2.5"/>
 
 
-    <vType id="type4"
+    <vType id="two_wheeled_vehicle_3"
            vClass="passenger" length="5" width="1.8" height="1.5" accel="2.6" decel="4.5"  emergencyDecel="9" sigma="1.0" maxSpeed="200"
            guiShape="passenger" speedFactor="2.0" speedDeviation="0.1" minGap="2.5"/>
 
 
-    <!--<vType id="type5"
+    <vType id="passenger_car_0"
            vClass="passenger" length="5" width="1.8" height="1.5" accel="2.6" decel="4.5" emergencyDecel="9" sigma="1.0" maxSpeed="200"
-           guiShape="sedan" speedFactor="2.0" speedDeviation="0.1" minGap="2.5"/>
+           guiShape="passenger/sedan" speedFactor="2.0" speedDeviation="0.1" minGap="2.5"/>
 
 
-    <vType id="type6"
+    <vType id="passenger_car_1"
            vClass="passenger" length="5" width="1.8" height="1.5" accel="2.6" decel="4.5"  emergencyDecel="9" sigma="1.0" maxSpeed="200"
-           guiShape="hatchback" speedFactor="2.0" speedDeviation="0.1" minGap="2.5"/>
+           guiShape="passenger/hatchback" speedFactor="2.0" speedDeviation="0.1" minGap="2.5"/>
 
 
-    <vType id="type7"
+    <vType id="passenger_car_2"
            vClass="passenger" length="5" width="1.8" height="1.5" accel="2.6" decel="4.5" emergencyDecel="9" sigma="1.0" maxSpeed="200"
-           guiShape="wagon" speedFactor="2.0" speedDeviation="0.1" minGap="2.5"/>
+           guiShape="passenger/wagon" speedFactor="2.0" speedDeviation="0.1" minGap="2.5"/>
 
 
-    <vType id="type8"
+    <vType id="passenger_car_3"
            vClass="passenger" length="4.7" width="1.9" height="1.73" accel="2.6" decel="4.5"  emergencyDecel="9" sigma="1.0" maxSpeed="200"
-           guiShape="van" speedFactor="2.0" speedDeviation="0.1" minGap="2.5"/>
+           guiShape="passenger/van" speedFactor="2.0" speedDeviation="0.1" minGap="2.5"/>
 
 
-    <vType id="type9"
+    <vType id="passenger_car_4"
            vClass="taxi" length="5"  width="1.8" height="1.5" accel="2.6" decel="4.5" emergencyDecel="9" sigma="1.0" maxSpeed="200"
            guiShape="passenger" speedFactor="2.0" speedDeviation="0.05" minGap="2.5"/>
 
 
-    <vType id="type10"
+    <vType id="passenger_car_5"
            vClass="emergency" length="6.5" width="2.16" height="2.86" accel="2.6" decel="4.5" emergencyDecel="9" sigma="1.0" maxSpeed="200"
-           guiShape="delivery" speedFactor="4.0" speedDeviation="0" minGap="2.5"/>
+           guiShape="emergency" speedFactor="4.0" speedDeviation="0" minGap="2.5"/>
 
 
-    <vType id="type11"
+    <vType id="passenger_car_6"
            vClass="delivery" length="6.5" width="2.16" height="2.86" accel="2.6" decel="4.5" emergencyDecel="9" sigma="1.0" maxSpeed="200"
            guiShape="delivery" speedFactor="2.0" speedDeviation="0.05" minGap="2.5"/>
 
 
-    <vType id="type12"
+    <vType id="truck_0"
            vClass="truck" length="7.1" width="2.4" height="2.4" accel="1.3" decel="4" emergencyDecel="7" sigma="1.0" maxSpeed="130"
            guiShape="truck" speedFactor="2.0" speedDeviation="0.05" minGap="2.5"/>
 
 
-    <vType id="type13"
+    <vType id="truck_1"
            vClass="trailer" length="16.5" width="2.55" height="4" accel="1.1" decel="4" emergencyDecel="7" sigma="1.0" maxSpeed="130"
-           guiShape="semitrailer" speedFactor="2.0" speedDeviation="0.05" minGap="2.5"/>
+           guiShape="truck/semitrailer" speedFactor="2.0" speedDeviation="0.05" minGap="2.5"/>
 
 
-    <vType id="type14"
+    <vType id="truck_2"
            vClass="trailer" length="18.75" width="2.55" height="4" accel="1" decel="4" emergencyDecel="7" sigma="1.0" maxSpeed="130"
-           guiShape="trailer" speedFactor="2.0" speedDeviation="0.05" minGap="2.5"/>
+           guiShape="truck/trailer" speedFactor="2.0" speedDeviation="0.05" minGap="2.5"/>
 
 
-    <vType id="type15"
+    <vType id="bus_0"
            vClass="bus" length="12" width="2.5" height="3.4" accel="1.2" decel="4" emergencyDecel="7" sigma="1.0" maxSpeed="85"
            guiShape="bus" speedFactor="2.0" speedDeviation="0" minGap="2.5"/>
 
 
-    <vType id="type16"
+    <vType id="bus_1"
            vClass="bus" length="17.9" width="2.5" height="3.0" accel="1.2" decel="4" emergencyDecel="7" sigma="1.0" maxSpeed="85"
-           guiShape="flexible" speedFactor="2.0" speedDeviation="0" minGap="2.5"/>
+           guiShape="bus/flexible" speedFactor="2.0" speedDeviation="0" minGap="2.5"/>
 
 
-    <vType id="type17"
+    <vType id="bus_2"
            vClass="coach" length="14" width="2.6" height="4" accel="2.0" decel="4" emergencyDecel="7" sigma="1.0" maxSpeed="100"
-           guiShape="coach" speedFactor="2.0" speedDeviation="0.05" minGap="2.5"/>
+           guiShape="bus/coach" speedFactor="2.0" speedDeviation="0.05" minGap="2.5"/>
 
 
-    <vType id="type18"
+    <vType id="electric_vehicle_0"
            vClass="evehicle" length="5" width="1.8" height="1.5" accel="2.6" decel="4.5" emergencyDecel="9" sigma="1.0" maxSpeed="200"
            guiShape="evehicle" speedFactor="2.0" speedDeviation="0.1" minGap="2.5"/>
 
 
-    <vType id="type19"
-           vClass="e-scooter" length="1.1" width="0.4" height="1.2" accel="2" decel="4" emergencyDecel="7" sigma="1.0" maxSpeed="20"
-           guiShape="e-scooter" speedFactor="2.0" speedDeviation="0.1" minGap="1.5"/>-->
+    <vType id="electric_vehicle_1"
+           vClass="evehicle" length="1.1" width="0.4" height="1.2" accel="2" decel="4" emergencyDecel="7" sigma="1.0" maxSpeed="20"
+           guiShape="scooter" speedFactor="2.0" speedDeviation="0.1" minGap="1.5"/>
 
 
-    <route id="route_0" edges="E1 E2 E3 E4 E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24"/>
-    <flow id="type1flow" type="type1" beg="0" end="0" number="5" from="E1" to="E24"/>
-    <!--<flow id="passengercarflow" type="passenger car" beg="0" end="0" number="5" from="e1" to="e24"/>
-    <flow id="truckflow" type="truck" beg="0" end="0" number="5" from="e1" to="e24"/>
-    <flow id="busflow" type="bus" beg="0" end="0" number="5" from="e1" to="e24"/>
-    <flow id="electricvehicleflow" type="electric vehicle" beg="0" end="0" number="5" from="e1" to="e24"/>-->
+    <route id="route_0" edges="E1 E2 E7 -E6"/>
+    <route id="route_1" edges="E1 E2 E7 E24 -E6"/>
+    <route id="route_2" edges="E1 E2 E7 E24 -E7"/>
+    <route id="route_3" edges="E1 E2 E7 E24 E12 -E11"/>
+    <route id="route_4" edges="E1 E2 E7 E24 E12 E17 -E16"/>
+    <route id="route_5" edges="E1 E2 E7 E24 E12 E17 -E21"/>
+    <route id="route_6" edges="E1 E2 E7 E12 -E11"/>
+    <route id="route_7" edges="E1 E2 E7 E12 E17 -E16"/>
+    <route id="route_8" edges="E1 E2 E7 E12 E17 -E21"/>
+    <route id="route_9" edges="E1 E5 E4 -E3"/>
+    <route id="route_10" edges="E1 E5 E4 E8 E13 -E23"/>
+    <route id="route_11" edges="E1 E5 E4 E8 E13 E14 E15 E9 -E8"/>
+    <route id="route_12" edges="E1 E5 E4 E8 E13 E14 E15 E10 E9 -E8"/>
+    <route id="route_13" edges="E1 E5 E4 E8 E13 E14 E15 E10 E11 -E12"/>
+    <route id="route_14" edges="E1 E5 E4 E8 E13 E14 E15 E10 E11 E17 -E16"/>
+    <route id="route_15" edges="E1 E5 E4 E8 E13 E14 E15 E10 E11 E17 -E21"/>
+    <route id="route_16" edges="E1 E5 E4 E8 E13 E14 E15 E10 E24 -E6"/>
+    <route id="route_17" edges="E1 E5 E4 E8 E13 E14 E15 E10 E24 -E7"/>
+    <route id="route_18" edges="E1 E5 E4 E8 E13 E14 E15 E10 E24 E12 -E11"/>
+    <route id="route_19" edges="E1 E5 E4 E8 E13 E14 E15 E10 E24 E12 E17 -E16"/>
+    <route id="route_20" edges="E1 E5 E4 E8 E13 E14 E15 E10 E24 E12 E17 -E21"/>
+    <route id="route_21" edges="E1 E5 E4 E8 E13 E14 E15 E11 -E12"/>
+    <route id="route_22" edges="E1 E5 E4 E8 E13 E14 E15 E11 E17 -E16"/>
+    <route id="route_23" edges="E1 E5 E4 E8 E13 E14 E15 E11 E17 -21"/>
+    <route id="route_24" edges="E1 E5 E4 E8 E13 E14 E15 E24 -E6"/>
+    <route id="route_25" edges="E1 E5 E4 E8 E13 E14 E15 E24 -E7"/>
+    <route id="route_26" edges="E1 E5 E4 E8 E13 E14 E15 E24 E12 -E11"/>
+    <route id="route_27" edges="E1 E5 E4 E8 E13 E14 E15 E24 E12 E17 -E16"/>
+    <route id="route_28" edges="E1 E5 E4 E8 E13 E14 E15 E24 E12 E17 E21"/>
+    <route id="route_29" edges="E1 E5 E4 E8 E13 E14 E16 -E21"/>
+    <route id="route_30" edges="E1 E5 E4 E8 E13 E14 E16 -E17"/>
+    <route id="route_31" edges="E1 E5 E4 E8 E13 E14 E22 -E19"/>
+    <route id="route_32" edges="E1 E5 E4 E8 E13 E14 E22 E23"/>
+    <route id="route_33" edges="E1 E5 E4 E8 E13 E14 E22 E23 -E13"/>
+    <route id="route_34" edges="E1 E5 E4 E8 E13 E14 E22 E23 E18"/>
+    <route id="route_35" edges="E1 E5 E4 E8 E13 E14 E22 E20"/>
+    <route id="route_36" edges="E1 E5 E4 E8 E13 E18"/>
+    <route id="route_37" edges="E1 E5 E4 E8 E9 -E8"/>
+    <route id="route_38" edges="E1 E5 E4 E8 E9 E13 -E23"/>
+    <route id="route_39" edges="E1 E5 E4 E8 E9 E13 E14 E15"/>
+    <route id="route_40" edges="E1 E5 E4 E8 E9 E13 E14 E15 E10"/>
+    <route id="route_41" edges="E1 E5 E4 E8 E9 E13 E14 E15 E11"/>
+    <route id="route_42" edges="E1 E5 E4 E8 E9 E13 E14 E15 E24 -E6"/>
+    <route id="route_43" edges="E1 E5 E4 E8 E9 E13 E14 E15 E24 -E7"/>
+    <route id="route_44" edges="E1 E5 E4 E8 E9 E13 E14 E15 E24 E12 -E11"/>
+    <route id="route_45" edges="E1 E5 E4 E8 E9 E13 E14 E15 E24 E12 E17 -E16"/>
+    <route id="route_46" edges="E1 E5 E4 E8 E9 E13 E14 E15 E24 E12 E17 -E21"/>
+    <route id="route_47" edges="E1 E5 E4 E8 E9 E13 E14 E16"/>
+    <route id="route_48" edges="E1 E5 E4 E8 E9 E13 E14 E22 -E19"/>
+    <route id="route_49" edges="E1 E5 E4 E8 E9 E13 E14 E22 E23"/>
+    <route id="route_50" edges="E1 E5 E4 E8 E9 E13 E14 E22 E23 E18"/>
+    <route id="route_51" edges="E1 E5 E4 E8 E9 E13 E14 E22 E23 -E13"/>
+    <route id="route_52" edges="E1 E5 E4 E8 E9 E13 E14 E22 E20"/>
+    <route id="route_53" edges="E1 E5 E4 E8 E9 E13 E18"/>
+    <route id="route_54" edges="E1 E5 E6 -E7"/>
+    <route id="route_55" edges="E1 E5 E6 E24 -E6"/>
+    <route id="route_56" edges="E1 E5 E6 E24 -E7"/>
+    <route id="route_57" edges="E1 E5 E6 E24 E12 -E11"/>
+    <route id="route_58" edges="E1 E5 E6 E24 E12 E17 -E21"/>
+    <route id="route_59" edges="E1 E5 E6 E24 E12 E17 -E16"/>
+    <route id="route_60" edges="E1 E5 E6 E12 -E11"/>
+    <route id="route_61" edges="E1 E5 E6 E12 E17 -E16"/>
+    <route id="route_62" edges="E1 E5 E6 E12 E17 -E21"/>
+    <route id="route_63" edges="E1 E5 E10 E9 -E8"/>
+    <route id="route_64" edges="E1 E5 E10 E9 E13 -E23"/>
+    <route id="route_65" edges="E1 E5 E10 E9 E13 E14 E15"/>
+    <route id="route_66" edges="E1 E5 E10 E9 E13 E14 E15 E11 -E12"/>
+    <route id="route_67" edges="E1 E5 E10 E9 E13 E14 E15 E11 E17 -E16"/>
+    <route id="route_68" edges="E1 E5 E10 E9 E13 E14 E15 E11 E17 -E21"/>
+    <route id="route_69" edges="E1 E5 E10 E9 E13 E14 E15 E24 -E6"/>
+    <route id="route_70" edges="E1 E5 E10 E9 E13 E14 E15 E24 -E7"/>
+    <route id="route_71" edges="E1 E5 E10 E9 E13 E14 E15 E24 E12 -E11"/>
+    <route id="route_72" edges="E1 E5 E10 E9 E13 E14 E15 E24 E12 E17 -E16"/>
+    <route id="route_73" edges="E1 E5 E10 E9 E13 E14 E15 E24 E12 E17 -E21"/>
+    <route id="route_74" edges="E1 E5 E10 E9 E13 E14 E15 E10 E11 -E12"/>
+    <route id="route_75" edges="E1 E5 E10 E9 E13 E14 E15 E10 E11 E17 -E16"/>
+    <route id="route_76" edges="E1 E5 E10 E9 E13 E14 E15 E10 E11 E17 -E21"/>
+    <route id="route_77" edges="E1 E5 E10 E9 E13 E14 E15 E10 E24 -E6"/>
+    <route id="route_78" edges="E1 E5 E10 E9 E13 E14 E15 E10 E24 -E7"/>
+    <route id="route_79" edges="E1 E5 E10 E9 E13 E14 E15 E10 E24 E12"/>
+    <route id="route_80" edges="E1 E5 E10 E9 E13 E14 E15 E11 -E12"/>
+    <route id="route_81" edges="E1 E5 E10 E9 E13 E14 E15 E11 E17"/>
+    <route id="route_82" edges="E1 E5 E10 E9 E13 E14 E15 E24 -E6"/>
+    <route id="route_83" edges="E1 E5 E10 E9 E13 E14 E15 E24 -E7"/>
+    <route id="route_84" edges="E1 E5 E10 E9 E13 E14 E15 E24 E12 -E11"/>
+    <route id="route_85" edges="E1 E5 E10 E9 E13 E14 E15 E24 E12 E17 -E16"/>
+    <route id="route_86" edges="E1 E5 E10 E9 E13 E14 E15 E24 E12 E17 -E21"/>
+    <route id="route_87" edges="E1 E5 E10 E9 E13 E14 E16 -E21"/>
+    <route id="route_88" edges="E1 E5 E10 E9 E13 E14 E16 -E17"/>
+    <route id="route_89" edges="E1 E5 E10 E9 E13 E14 E22 -E19"/>
+    <route id="route_90" edges="E1 E5 E10 E9 E13 E14 E22 E23"/>
+    <route id="route_91" edges="E1 E5 E10 E9 E13 E14 E22 E20"/>
+    <route id="route_92" edges="E1 E5 E10 E9 E13 E18"/>
+    <route id="route_93" edges="E1 E5 E10 E15 E9 -E8"/>
+    <route id="route_94" edges="E1 E5 E10 E15 E9 E13 -E23"/>
+    <route id="route_95" edges="E1 E5 E10 E15 E9 E13 E14"/>
+    <route id="route_96" edges="E1 E5 E10 E15 E9 E13 E14 E16 -E21"/>
+    <route id="route_97" edges="E1 E5 E10 E15 E9 E13 E14 E16 -E17"/>
+    <route id="route_98" edges="E1 E5 E10 E15 E9 E13 E14 E22 -E19"/>
+    <route id="route_99" edges="E1 E5 E10 E15 E9 E13 E14 E22 E23 -E13"/>
+    <route id="route_100" edges="E1 E5 E10 E15 E9 E13 E14 E22 E23 E18"/>
+    <route id="route_101" edges="E1 E5 E10 E15 E9 E13 E14 E22 E23"/>
+    <route id="route_102" edges="E1 E5 E10 E15 E9 E13 E14 E22 E20"/>
+    <route id="route_103" edges="E1 E5 E10 E15 E9 E13 E18"/>
+    <route id="route_104" edges="E1 E5 E10 E15"/>
+    <route id="route_105" edges="E1 E5 E10 E15 E9 -E8"/>
+    <route id="route_106" edges="E1 E5 E10 E15 E9 E13 E14"/>
+    <route id="route_107" edges="E1 E5 E10 E15 E9 E13 E14 E16 -E21"/>
+    <route id="route_108" edges="E1 E5 E10 E15 E9 E13 E14 E16 -E17"/>
+    <route id="route_109" edges="E1 E5 E10 E15 E9 E13 E14 E22 -E19"/>
+    <route id="route_110" edges="E1 E5 E10 E15 E9 E13 E14 E22 E23"/>
+    <route id="route_111" edges="E1 E5 E10 E15 E9 E13 E14 E22 E23 -E13"/>
+    <route id="route_112" edges="E1 E5 E10 E15 E9 E13 E14 E22 E23 E18"/>
+    <route id="route_113" edges="E1 E5 E10 E15 E9 E13 E14 E22 E20"/>
+    <route id="route_114" edges="E1 E5 E10 E15 E9 E13 E18"/>
+    <route id="route_115" edges="E1 E5 E10 E15 E9 E13 -E23"/>
+    <route id="route_116" edges="E1 E5 E10 E15 E11 -E12"/>
+    <route id="route_117" edges="E1 E5 E10 E15 E11 E17 -E16"/>
+    <route id="route_118" edges="E1 E5 E10 E15 E11 E17 -E21"/>
+    <route id="route_119" edges="E1 E5 E10 E15 E24 -E6"/>
+    <route id="route_120" edges="E1 E5 E10 E15 E24 -E7"/>
+    <route id="route_121" edges="E1 E5 E10 E15 E24 E12 -E11"/>
+    <route id="route_122" edges="E1 E5 E10 E15 E24 E12 E17 -E16"/>
+    <route id="route_123" edges="E1 E5 E10 E15 E24 E12 E17 -E21"/>
+    <route id="route_124" edges="E1 E5 E10 E15 E11 -E12"/>
+    <route id="route_125" edges="E1 E5 E10 E15 E11 E17 -E16"/>
+    <route id="route_126" edges="E1 E5 E10 E15 E11 E17 -E21"/>
+    <route id="route_127" edges="E1 E5 E10 E15 E24"/>
+    <route id="route_128" edges="E1 E5 E10 E11 -E12"/>
+    <route id="route_129" edges="E1 E5 E10 E11 E17 -E16"/>
+    <route id="route_130" edges="E1 E5 E10 E11 E17 -E21"/>
+    <route id="route_131" edges="E1 E5 E10 E24 -E6"/>
+    <route id="route_132" edges="E1 E5 E10 E24 -E7"/>
+    <route id="route_132" edges="E1 E5 E10 E24 E12 -E11"/>
+    <route id="route_133" edges="E1 E5 E10 E24 E12 E17 -E16"/>
+    <route id="route_134" edges="E1 E5 E10 E24 E12 E17 -E21"/>
+    <flow id="two_wheeled_vehicleflow" type="two_wheeled_vehicle_0" beg="0" end="0"  number="5" route="route_0"/>
+    <!--<flow id="passengercarflow" type="passenger_car_5" beg="0" end="5" number="5" from="E1" to="E24"/>
+    <flow id="truckflow" type="truck_0" beg="0" end="10" number="5" from="E1" to="E24"/>
+    <flow id="busflow" type="bus_0" beg="0" end="0" number="15" from="E1" to="E24"/>
+    <flow id="electricvehicleflow" type="electric_vehicle_0" beg="0" end="20" number="5" from="E1" to="E24"/>
 
 
-    <!--<vehicle id="0" type="car" route="route_0" depart="0" />-->
+    <vehicle id="0" type="car" route="route_0" depart="0" />-->
 
 </routes>
