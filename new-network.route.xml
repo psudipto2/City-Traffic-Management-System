@@ -45,12 +45,12 @@
            guiShape="passenger" speedFactor="2.0" speedDeviation="0.05" minGap="2.5"/>
 
 
-    <vType id="passenger_car_5"
+    <vType id="emergency"
            vClass="emergency" length="6.5" width="2.16" height="2.86" accel="2.6" decel="4.5" emergencyDecel="9" sigma="1.0" maxSpeed="200"
            guiShape="emergency" speedFactor="4.0" speedDeviation="0" minGap="2.5"/>
 
 
-    <vType id="passenger_car_6"
+    <vType id="passenger_car_5"
            vClass="delivery" length="6.5" width="2.16" height="2.86" accel="2.6" decel="4.5" emergencyDecel="9" sigma="1.0" maxSpeed="200"
            guiShape="delivery" speedFactor="2.0" speedDeviation="0.05" minGap="2.5"/>
 
@@ -440,11 +440,14 @@
 
 
 
-    <flow id="two_wheeled_vehicleflow" type="two_wheeled_vehicle_0" beg="0" end="200"  number="5" route="route_10"/>
-    <flow id="passengercarflow" type="passenger_car_5" beg="5" end="245" number="5" route="route_20"/>
-    <flow id="truckflow" type="truck_0" beg="10" end="250" number="5" route="route_70"/>
-    <flow id="busflow" type="bus_0" beg="15" end="255" number="5" route="route_120"/>
-    <flow id="electricvehicleflow" type="electric_vehicle_0" beg="20" end="260" number="5" route="route_130"/>
+    <flow id="vehicleflow_0" type="two_wheeled_vehicle_0" beg="0" end="0"  number="5" route="route_0"/>
+    <flow id="vehicleflow_1" type="two_wheeled_vehicle_1" beg="0" end="0"  number="5" route="route_1"/>
+    <flow id="vehicleflow_2" type="two_wheeled_vehicle_2" beg="0" end="0"  number="5" route="route_2"/>
+    <flow id="vehicleflow_3" type="two_wheeled_vehicle_3" beg="0" end="0"  number="5" route="route_3"/>
+    .......................
+    <flow id="vehicleflow_17" type="electric_vehicle_1" beg="0" end="0"  number="5" route="route_17"/>
+    <flow id="vehicleflow_18" type="two_wheeled_vehicle_0" beg="0" end="0"  number="5" route="route_18"/>
+    <flow id="vehicleflow_340" type="electric_vehicle_1" beg="0" end="0"  number="5" route="route_340"/>
 
 
    <!-- <vehicle id="0" type="car" route="route_0" depart="0" />-->
